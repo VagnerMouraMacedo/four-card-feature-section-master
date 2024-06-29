@@ -23,6 +23,7 @@ body {
 }
 header {
   margin-top: 80px;
+  text-align: center;
 }
 header .text1 {
   color: var(--Grayish-Blue);
@@ -134,6 +135,7 @@ section .card4 {
   width: 50px;
 }
 
-.attribution{
+.attribution {
   font-size: 10px;
+  text-align: center;
 }
