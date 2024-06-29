@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Poppins-Bol";
+  src: url(fonts/Poppins-Regular.ttf);
+}
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body {
+  font-size: 15px;
+  margin: 40px;
+  font-family: "Poppins-Bol";
+}
+header {
+  margin-top: 80px;
+}
+header .text1 {
+  color: var(--Grayish-Blue);
+  font-weight: 500;
+}
+header .text2 {
+  font-size: 1.6em;
+  font-weight: 800;
+  color: var(--Very-Dark-Blue);
+}
+header p {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 7800;
+  color: var(--Grayish-Blue);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+section .card1 {
+  border-top: 3px solid var(--Cyan);
+  box-shadow: -1px 13px 31px -14px;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin: 15px 0;
+}
+.card1 h3 {
+  color: var(--Very-Dark-Blue);
+  margin-top: 5px;
+  font-weight: bolder;
+}
+.card1 h5 {
+  color: var(--Grayish-Blue);
+  margin: 5px 0px 30px;
+}
+.card1 .img {
+  text-align: end;
+}
+.card1 .img img {
+  width: 50px;
+}
+section .card2 {
+  border-top: 3px solid var(--Red);
+  box-shadow: -1px 13px 31px -14px;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin: 15px 0;
+}
+.card2 h3 {
+  color: var(--Very-Dark-Blue);
+  margin-top: 5px;
+  font-weight: bolder;
+}
+.card2 h5 {
+  color: var(--Grayish-Blue);
+  margin: 5px 0px 30px;
+}
+.card2 .img {
+  text-align: end;
+}
+.card2 .img img {
+  width: 50px;
+}
+section .card3 {
+  border-top: 3px solid var(--Orange);
+  box-shadow: -1px 13px 31px -14px;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin: 15px 0;
+}
+.card3 h3 {
+  color: var(--Very-Dark-Blue);
+  margin-top: 5px;
+  font-weight: bolder;
+}
+.card3 h5 {
+  color: var(--Grayish-Blue);
+  margin: 5px 0px 30px;
+}
+.card3 .img {
+  text-align: end;
+}
+.card3 .img img {
+  width: 50px;
+}
+section .card4 {
+  border-top: 3px solid var(--Blue);
+  box-shadow: -1px 13px 31px -14px;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin: 15px 0;
+}
+.card4 h3 {
+  color: var(--Very-Dark-Blue);
+  margin-top: 5px;
+  font-weight: bolder;
+}
+.card4 h5 {
+  color: var(--Grayish-Blue);
+  margin: 5px 0px 30px;
+}
+.card4 .img {
+  text-align: end;
+}
+.card4 .img img {
+  width: 50px;
+}
+
+.attribution{
+  font-size: 10px;
+}
