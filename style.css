@@ -3,139 +3,109 @@
   margin: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "Poppins-Bol";
-  src: url(fonts/Poppins-Regular.ttf);
-}
+
 :root {
+  /* ###Primary */
   --Red: hsl(0, 78%, 62%);
   --Cyan: hsl(180, 62%, 55%);
   --Orange: hsl(34, 97%, 64%);
   --Blue: hsl(212, 86%, 64%);
+  /* ### Neutral */
   --Very-Dark-Blue: hsl(234, 12%, 34%);
   --Grayish-Blue: hsl(229, 6%, 66%);
   --Very-Light-Gray: hsl(0, 0%, 98%);
 }
+
+@font-face {
+  font-family: "Poppins-semibold";
+  src: url(fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Poppins-light";
+  src: url(fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "Poppins-regular";
+  src: url(fonts/Poppins-Regular.ttf);
+}
 body {
+  margin: 90px 40px 0;
+  font-family: "Poppins-semibold";
   font-size: 15px;
-  margin: 40px;
-  font-family: "Poppins-Bol";
 }
+
 header {
-  margin-top: 80px;
+  margin: 20% 0;
   text-align: center;
+  width: 100%;
 }
-header .text1 {
+header .h1 {
   color: var(--Grayish-Blue);
-  font-weight: 500;
-}
-header .text2 {
+  font-family: "Poppins-light";
   font-size: 1.6em;
-  font-weight: 800;
+  font-weight: 100;
+}
+header .h2 {
   color: var(--Very-Dark-Blue);
+  margin-bottom: 20px;
+  font-size: 1.6em;
 }
 header p {
-  margin-top: 20px;
-  text-align: center;
-  font-weight: 7800;
   color: var(--Grayish-Blue);
+  font-family: "Poppins-regular";
+  font-weight: 600;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  align-items: center;
 }
-section .card1 {
-  border-top: 3px solid var(--Cyan);
-  box-shadow: -1px 13px 31px -14px;
+section .card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 25px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 2px 9px -5px;
+  margin-bottom: 20px;
   border-radius: 5px;
-  padding: 20px 30px;
-  margin: 15px 0;
 }
-.card1 h3 {
+section .card h3 {
+  font-size: 1.3em;
   color: var(--Very-Dark-Blue);
-  margin-top: 5px;
-  font-weight: bolder;
 }
-.card1 h5 {
+section .card p {
   color: var(--Grayish-Blue);
-  margin: 5px 0px 30px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 85px;
+  font-family: "Poppins-regular";
 }
-.card1 .img {
-  text-align: end;
+section .card img {
+  width: 55px;
+  position: absolute;
+  bottom: 12%;
+  right: 12%;
 }
-.card1 .img img {
-  width: 50px;
+section .one {
+  border-top: 4px solid var(--Cyan);
 }
-section .card2 {
-  border-top: 3px solid var(--Red);
-  box-shadow: -1px 13px 31px -14px;
-  border-radius: 5px;
-  padding: 20px 30px;
-  margin: 15px 0;
+section .two {
+  border-top: 4px solid var(--Red);
 }
-.card2 h3 {
-  color: var(--Very-Dark-Blue);
-  margin-top: 5px;
-  font-weight: bolder;
+section .three {
+  border-top: 4px solid var(--Orange);
 }
-.card2 h5 {
-  color: var(--Grayish-Blue);
-  margin: 5px 0px 30px;
-}
-.card2 .img {
-  text-align: end;
-}
-.card2 .img img {
-  width: 50px;
-}
-section .card3 {
-  border-top: 3px solid var(--Orange);
-  box-shadow: -1px 13px 31px -14px;
-  border-radius: 5px;
-  padding: 20px 30px;
-  margin: 15px 0;
-}
-.card3 h3 {
-  color: var(--Very-Dark-Blue);
-  margin-top: 5px;
-  font-weight: bolder;
-}
-.card3 h5 {
-  color: var(--Grayish-Blue);
-  margin: 5px 0px 30px;
-}
-.card3 .img {
-  text-align: end;
-}
-.card3 .img img {
-  width: 50px;
-}
-section .card4 {
-  border-top: 3px solid var(--Blue);
-  box-shadow: -1px 13px 31px -14px;
-  border-radius: 5px;
-  padding: 20px 30px;
-  margin: 15px 0;
-}
-.card4 h3 {
-  color: var(--Very-Dark-Blue);
-  margin-top: 5px;
-  font-weight: bolder;
-}
-.card4 h5 {
-  color: var(--Grayish-Blue);
-  margin: 5px 0px 30px;
-}
-.card4 .img {
-  text-align: end;
-}
-.card4 .img img {
-  width: 50px;
+section .four {
+  border-top: 4px solid var(--Blue);
 }
 
-.attribution {
-  font-size: 10px;
+footer {
+  width: 100%;
+  font-size: 0.6em;
   text-align: center;
+  margin-bottom: 10px;
 }
